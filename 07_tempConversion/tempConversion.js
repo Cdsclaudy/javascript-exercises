@@ -1,9 +1,11 @@
-const ftoc = function() {
-
+const ftoc = function(x) {
+  let conv=(x-32)*5/9;
+  return(Math.round(conv*10)/10);
 };
 
-const ctof = function() {
-
+const ctof = function(x) {
+  let conv=x*9/5+32;
+  return(Math.round(conv*10)/10);
 };
 
 // Do not edit below this line
